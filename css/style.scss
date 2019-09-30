@@ -2,17 +2,16 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0;
-}
-
-#wrapper{
-    position: relative;
-    width: 100%; 
    
 }
+
 
 #profilepic{
     width: 90vw; 
     
+}
+#profilepic2{
+    display: none; 
 }
 
 h1 {
@@ -28,15 +27,14 @@ i {
 }
 
 .wrap {
-
-    padding: 20px; 
-
+    
+    padding: 15px; 
     h2 {
         text-transform: uppercase;
     }
 
     h3 {
-        padding: 15px;
+       
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
@@ -115,19 +113,49 @@ i {
  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px){
     
-    #profilepic{
+    #profilepic2{
         width: 50vw; 
+        display: block; 
     }
+    #profilepic{
+        display: none;
+    }
+
+
+    .yellow{
+        flex-wrap: wrap; 
+        .contact{
+           display: block; 
+           width: 50%; 
+        }
+
+        .left{
+            left: 0;
+        }
+
+        .right{
+            right: 0; 
+        }
+    }
+    
+.white{display: flex; 
+
+.skills{
+    width: 35%; 
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    body{
-        background-color: orange; 
-    }
- }
+.experience{
+    width: 65%; 
+    
+}
+}
+
+
+
+}
+
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
