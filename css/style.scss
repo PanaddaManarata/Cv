@@ -1,0 +1,137 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#wrapper{
+    position: relative;
+    width: 100%; 
+   
+}
+
+#profilepic{
+    width: 90vw; 
+    
+}
+
+h1 {
+    text-transform: uppercase;
+
+    .familyname {
+        font-weight: bolder;
+    }
+}
+
+i {
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.wrap {
+
+    padding: 20px; 
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    h3 {
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    a {
+        color: black;
+        text-align: center;
+    }
+}
+
+.yellow {
+    background-color: yellow;
+
+    span {
+        background-color: azure;
+    }
+
+    .adress {
+        p {
+            text-align: center;
+        }
+    }
+
+    
+}
+
+.white {
+    span {
+        background-color: yellow;
+    }
+}
+
+
+
+
+.contact {
+    display: flex;
+
+}
+
+.skills {
+    p {
+        padding: 10px;
+
+    }
+        i {
+            padding-right: 15px;
+        }
+}
+
+.work {
+    display: flex;
+
+    h6 {
+        width: 10%;
+        text-orientation: upright;
+        writing-mode: vertical-rl;
+    }
+
+    p {
+        width: 90%;
+        padding-left: 20px;
+    }
+}
+
+// 
+
+@media (max-width: 575.98px) { 
+   
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    #profilepic{
+        width: 50vw; 
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body{
+        background-color: orange; 
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    body{
+        background-color: aqua; 
+    }
+ }
