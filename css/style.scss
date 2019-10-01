@@ -2,16 +2,37 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0;
-   
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Rubik&display=swap');
+
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+*/ 
+
+body {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    letter-spacing: 1.5px; 
+    h1,h2,h3{
+        font-family: 'Raleway', sans-serif;
+    }
+   font-family: 'Rubik', sans-serif;
 }
 
 
-#profilepic{
-    width: 90vw; 
-    
+.hide {
+    display: none;
 }
-#profilepic2{
-    display: none; 
+#profilepic {
+    width: 90vw;
+
+}
+
+#profilepic2 {
+    display: none;
 }
 
 h1 {
@@ -27,14 +48,15 @@ i {
 }
 
 .wrap {
-    
-    padding: 15px; 
+
+    padding: 15px;
+
     h2 {
         text-transform: uppercase;
     }
 
     h3 {
-       
+
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
@@ -43,23 +65,39 @@ i {
     a {
         color: black;
         text-align: center;
+        text-decoration: none;
+    }
+
+    a:hover {
+        font-weight: bolder;
+    }
+
+    i:hover {
+        color: black;
     }
 }
 
 .yellow {
+
+    
+
     background-color: yellow;
 
     span {
         background-color: azure;
     }
 
-    .adress {
+    .address {
         p {
             text-align: center;
         }
     }
 
-    
+    .image {
+        opacity: 0.8;
+        padding-bottom: 10px;
+    }
+
 }
 
 .white {
@@ -70,9 +108,12 @@ i {
 
 
 
-
 .contact {
     display: flex;
+
+    hr {
+        display: none;
+    }
 
 }
 
@@ -81,9 +122,10 @@ i {
         padding: 10px;
 
     }
-        i {
-            padding-right: 15px;
-        }
+
+    i {
+        padding-right: 15px;
+    }
 }
 
 .work {
@@ -101,65 +143,188 @@ i {
     }
 }
 
-// 
 
-@media (max-width: 575.98px) { 
-   
- }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-    
- }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px){
-    
-    #profilepic2{
-        width: 50vw; 
-        display: block; 
+@media (min-width: 768px) {
+
+.hide{
+    display: block
+}
+
+    #wrapthis {
+
+        h3 {
+            font-size: 18px;
+        }
     }
-    #profilepic{
+
+    #cv{
+        width: 60px; 
+        height: 60px; 
+        border-radius: 50%; 
+        border: 3px solid black; 
+        text-align: center; 
+        padding: 15px; 
+        z-index: 10;
+        position: absolute; 
+        top: 59%;  
+        left: 20px; 
+        
+    }
+
+    #profilepic2 {
+        width: 50vw;
+        display: block;
+        padding: 0;
+
+
+
+    }
+
+    #profilepic {
         display: none;
     }
 
 
-    .yellow{
-        flex-wrap: wrap; 
-        .contact{
-           display: block; 
-           width: 50%; 
+    .yellow {
+        padding: 50px;
+        display: grid;
+        grid-template-areas:
+            'home home home panadda panadda'
+            'home home home panadda panadda'
+            'contact contact contact image1 image1'
+            'contact contact contact image1 image1'
+
+        ;
+
+        .hide {
+            display: block
         }
 
-        .left{
-            left: 0;
+        span {
+            background-color: transparent;
         }
 
-        .right{
-            right: 0; 
+        .name {
+          
+            grid-area: panadda;
+
+            p {
+               
+                padding-bottom: 10px;
+            }
+        }
+
+        .address {
+            grid-area: home;
+            margin: 0;
+            padding-bottom: 60px; 
+
+            h3,
+            p {
+                text-align: left;
+            }
+        }
+
+        .image {
+            grid-area: image1;
+            opacity: 0.8;
+            margin-left: 30px;
+            padding-top: 87px;
+            padding-left: 0;
+
+        }
+
+        .contactmain {
+            h3 {
+                text-align: left;
+            }
+
+            .contact {
+                text-align: left;
+                grid-area: contact;
+                display: block;
+
+                hr {
+                    display: block;
+                }
+
+                p {
+                    text-align: left;
+                }
+                a{
+                    margin-bottom: 15px; 
+                }
+
+            }
         }
     }
-    
-.white{display: flex; 
 
-.skills{
-    width: 35%; 
-}
+    .white {
+        background-color: azure; 
+        padding: 50px;
 
-.experience{
-    width: 65%; 
-    
-}
-}
+        .flex {
+            display: flex;
 
+            h2,
+            h3 {
+                text-align: left;
+            }
 
+            h2{
+                padding-bottom: 20px; 
+            }
 
+            span {
+                background-color: transparent;
+            }
+
+            .skills {
+                width: 35%;
+            }
+
+            .experience {
+                width: 65%;
+            }
+        }
+    }
 }
 
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    body{
-        background-color: aqua; 
+
+
+
+    #wrapthis {
+        position: relative;
+     margin-top: 10px; 
+        width: 960px;
+        background-color: white;
+        -webkit-box-shadow: -27px 15px 103px 0px rgba(0,0,0,0.31);
+        -moz-box-shadow: -27px 15px 103px 0px rgba(0,0,0,0.31);
+        box-shadow: -27px 15px 103px 0px rgba(0,0,0,0.31);
+        
+        #cv{
+            top: 57%
+        }
+        
+        #profilepic2 {
+            width: 35vw;
+        }
+
+        .address{
+            padding: 15px; 
+            padding-bottom: 70px; 
+        }
+
+        .image{padding-left: 15px; }
+
+
+        .white {
+            height: 75vh;
+        }
     }
- }
+}
