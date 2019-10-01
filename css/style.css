@@ -91,6 +91,10 @@ i {
   padding-bottom: 10px;
 }
 
+.white {
+  background-color: azure;
+}
+
 .white span {
   background-color: yellow;
 }
