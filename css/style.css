@@ -242,9 +242,7 @@ i {
   .white .flex h2,
   .white .flex h3 {
     text-align: left;
-  }
-  .white .flex h2 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .white .flex span {
     background-color: transparent;
