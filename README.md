@@ -18,6 +18,7 @@ As you know, developing a website with HTML, CSS and javascript you can have a h
 
 We're going to look at the different approach, problems, outcome (little touches to make it our own) in this article. 
 
+![screenshot example cv](example.png)
 #### Panadda - Junior web developer  
 
 if you look at the template you will find the address and contactsection left and the name and picture right. if thinking in mobile first and wanting a nice layout. You'd place your name first and after the picture. 
@@ -26,6 +27,8 @@ Thinking about this. A few months ago Tine and I started this 7 month web devele
 
 Today we're at the end of the course. While still liking this cv example, looking for good projects to send to our potential internships. We descided to give this one another change. Starting from mobile first! Because if you cannot open this beauty on your mobile phone. It would be a waist. 
 
-
+![screenshot panadda cv](panaddaCv.png)
 
 ### Tine - Junior web developer 
+![screenshot Tine cv](tineCv.png)
+
