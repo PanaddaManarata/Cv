@@ -19,13 +19,17 @@ As you know, developing a website with HTML, CSS and javascript you can have a h
 We're going to look at the different approach, problems, outcome (little touches to make it our own) in this article. 
 
 ![screenshot example cv](example.png)
+
 #### Panadda - Junior web developer  
 
-if you look at the template you will find the address and contactsection left and the name and picture right. if thinking in mobile first and wanting a nice layout. You'd place your name first and after the picture. 
+If you look at the template you will find the address and contactsection left and the name and picture right. if thinking in mobile first and wanting a nice layout. You'd place your name first and after the picture. 
 
 Thinking about this. A few months ago Tine and I started this 7 month web develepmont work-learning course. With no background ever in development. We began our journey as a web developer. Going into the course we had to make a cv and had the same example we liked but cound't find a right way to make it. I tried this one before and worked so long on it to afterwards just leave it to find a new example to work with. 
 
 Today we're at the end of the course. While still liking this cv example, looking for good projects to send to our potential internships. We descided to give this one another change. Starting from mobile first! Because if you cannot open this beauty on your mobile phone. It would be a waist. 
+
+So the first problem i faced was the position of the sections of the yellow part. If you follow the normal structure of the template you would have a weird outcome on your mobile. 
+So i decided to place my name and picture first. This would have a different outcome if you make your screen bigger. 
 
 ![screenshot panadda cv](panaddaCv.png)
 
